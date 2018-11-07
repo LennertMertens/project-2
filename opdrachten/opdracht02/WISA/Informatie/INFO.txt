@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=tXsVYJUUZ_s
+https://www.iis.net/overview
+https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server
+https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup
+https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-on-server-core
+https://www.youtube.com/watch?v=AsoBatspQfk
+https://technet.microsoft.com/en-us/library/hh831475(v=ws.11).aspx
+https://www.youtube.com/watch?v=zBF4jmqnB8I
+https://www.kartris.com/Knowledgebase/Installing-Kartris-using-Microsoft-Web-Deployment-Tool__k-23.aspx
+https://blogs.iis.net/krolson/errors-related-to-smo-microsoft-sql-server-2008-management-objects-in-web-deploy-ui
+https://www.iis.net/downloads/microsoft/web-deploy

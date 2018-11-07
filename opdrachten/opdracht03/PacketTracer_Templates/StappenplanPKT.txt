@@ -1,0 +1,53 @@
+SWITCH
+
+enable
+conf t
+hostname S1
+
+int range f0/1-23
+switchport mode access
+switchport access vlan 10
+int f0/24
+switchport mode access
+switchport access vlan 20
+exit
+
+ip default-gateway 192.168.100.1
+int g0/1
+switchport mode trunk
+exit
+
+copy run start
+
+ROUTER
+
+enable
+conf t
+hostname R1
+
+int g0/1
+no shut
+exit
+
+int g0/1.10
+encapsulation dot1Q 10
+ip address 192.168.10.1 255.255.255.0
+exit
+
+int g0/1.20
+encapsulation dot1Q 20
+ip address 192.168.20.1 255.255.255.0
+exit
+
+ip dhcp pool 10
+network 192.168.10.0 255.255.255.0
+exit
+
+ip dhcp pool 20
+network 192.168.20.0 255.255.255.0
+exit
+
+ip dhcp excluded-address 192.168.10.1 192.168.10.30
+exit
+
+copy run start

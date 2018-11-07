@@ -1,0 +1,33 @@
+enable
+conf t
+hostname S1
+enable secret class
+line console 0
+password cisco
+login
+line vty 0 15
+password cisco
+login
+exit
+service password-encryption
+end
+conf t
+vlan 10
+name Intern
+vlan 20
+name Gast
+exit
+int range f0/1-23
+switchport mode access
+switchport access vlan 10
+int f0/24
+switchport mode access
+switchport access vlan 20
+exit
+ip default-gateway 192.168.100.1
+int g0/1
+switchport mode trunk
+no shut
+exit
+end
+copy run start

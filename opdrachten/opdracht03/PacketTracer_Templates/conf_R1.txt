@@ -1,0 +1,43 @@
+enable
+conf t
+hostname R1
+no ip domain-lookup
+enable secret class
+line console 0
+password cisco
+login
+exit
+banner motd #
+Verboeden toegang voor onbevoegde leken!!! KGB Still Watching You!!!#
+line vty 0 4
+password cisco
+login
+exit
+service password-encryption 
+end
+conf t
+int g0/1.10
+encapsulation dot1Q 10
+ip address 192.168.10.1 255.255.255.0
+exit
+int g0/1.20
+encapsulation dot1Q 20
+ip address 192.168.20.1 255.255.255.0
+exit
+int g0/1
+no shut
+exit
+end
+conf t
+ip dhcp pool LAN-POOL-INTERN
+network 192.168.10.0 255.255.255.0
+default-router 192.168.10.1
+exit
+ip dhcp pool LAN-POOL-GAST
+network 192.168.20.0 255.255.255.0
+default-router 192.168.10.1
+exit
+ip dhcp excluded-address 192.168.10.1 192.168.10.30
+exit
+end
+copy run start

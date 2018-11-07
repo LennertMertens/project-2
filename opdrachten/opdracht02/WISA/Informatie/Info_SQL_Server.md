@@ -1,0 +1,11 @@
+* https://docs.microsoft.com/en-us/sql/powershell/download-sql-server-ps-module
+* https://docs.microsoft.com/nl-nl/powershell/module/sqlserver/?view=sqlserver-ps
+* https://www.mssqltips.com/sqlservertip/4993/new-features-and-best-practices-of-sql-server-powershell/
+* https://stackoverflow.com/questions/32713075/exe-silent-installation
+* https://www.youtube.com/watch?v=O_BC0agK3nc
+* https://technet.microsoft.com/en-us/library/hh831475(v=ws.11).aspx
+* https://www.youtube.com/watch?v=ahl1wRDpWC8
+* https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-using-a-configuration-file
+* https://4sysops.com/archives/use-powershell-to-execute-an-exe/
+* https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt
+* http://insidethecloudos.azurewebsites.net/install-sql-server-mgmt-studio-ssms-with-powershell/
